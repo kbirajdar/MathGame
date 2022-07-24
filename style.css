@@ -1,0 +1,164 @@
+html{
+    height: 100%;
+    background:radial-gradient(circle,#fff,#ccc);
+    background: -webkit-radial-gradient(circle,#fff,#ccc);
+    background:-o-radial-gradient(circle,#fff,#ccc);
+    background:-moz-radial-gradient(circle,#fff,#ccc);
+    
+
+}
+#container{
+    height: 450px;
+    width: 550px;
+    background-color: #99CEEC;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    -moz-box-shadow: 0px 4px 0px 0px #009de4;
+    -webkit-box-shadow: 0px 4px 0px 0px #009de4;
+    position: relative;
+}
+#score{
+    background:#F3F791 ;
+    color: #B6B666;
+    padding: 11px;
+    position: absolute;
+    left: 500px;
+    box-shadow:0px 4px #B6B666;
+    -moz-box-shadow: 0px 4px 0px 0px #B6B666;
+    -webkit-box-shadow: 0px 4px 0px 0px #B6B666;
+
+}
+#correct{
+    position: absolute;
+    background-color: green;
+    left: 225px;
+    padding: 10px;
+    color: #fff;
+    display: none;
+}
+#wrong{
+    position: absolute;
+    background-color: red;
+    left: 225px;
+    padding: 10px;
+    color: #fff;
+    display: none;
+}
+#quation{
+    width:450px;
+    height: 150px;
+    background-color: #4683a7;
+    margin:50px auto 10px auto;
+    padding: 20px;
+    box-shadow: 0px 4px 0px 0px #14394b;
+    -moz-box-shadow: 0px 4px 0px 0px #14394b;
+    -webkit-box-shadow: 0px 4px 0px 0px #14394b;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color:black ;
+
+}
+#instruction{
+    width: 494px;
+    height: 50px;
+    background-color: rgb(205, 132, 223);
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0px 4px#6b2b90;
+    -moz-box-shadow: 0px 4px 0px 0px #6b2b90;
+    -webkit-box-shadow: 0px 4px 0px 0px #6b2b90;
+
+}
+#choices{
+    height: 100px;
+    width: 494px;
+    margin: 5px auto;
+}
+.box{
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    float: left;
+    border-radius: 5px;
+    margin-right: 44px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgb(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px 0px 0px rgb(0,0,0,0.2);
+    -webkit-box-shadow: 0px 4px 0px 0px rgb(0,0,0,0.2);
+    text-align: center;
+    line-height: 85px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+.box:hover, #startreset:hover{
+    background-color: #9c899c;
+    color: white;
+    box-shadow: 0px 4px darkblue;
+    -moz-box-shadow: 0px 4px 0px 0px darkblue;
+    -webkit-box-shadow: 0px 4px 0px 0px darkblue;
+}
+.box:active,#startreset:active{
+    box-shadow:0px 0px rgb(0,0,0,0.2);
+    top: 4px;
+}
+#box4{
+    margin-right: 0px;
+}
+#startreset{
+    width: 85px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    box-shadow: 0px 4px rgb(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px 0px 0px rgb(0,0,0,0.2);
+    -webkit-box-shadow: 0px 4px 0px 0px rgb(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+
+}
+#timeremaining{
+    width: 165px;
+    padding: 10px;
+    position: absolute;
+    top: 436px;
+    left: 395px;
+    background-color: #b5d135;
+    border-radius: 3px;
+    box-shadow: 0 4px rgb(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px 0px 0px rgb(0,0,0,0.2);
+    -webkit-box-shadow: 0px 4px 0px 0px rgb(0,0,0,0.2);
+    display: none;
+}
+#GameOver{
+    height:215px;
+    width: 515px;
+    background: linear-gradient(#DFAA5E,#eb542e);
+    background: -webkit-linear-gradient(#DFAA5E,#eb542e);
+    background: -o-linear-gradient(#DFAA5E,#eb542e);
+    background: -moz-linear-gradient(#DFAA5E,#eb542e);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    z-index: 2;
+    display: none;
+}
